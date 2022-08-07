@@ -1,82 +1,116 @@
-h2{
-    font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-}
-h4{
-    font-size: 40px;
-    font-family:cursive ;
+h1 {
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
- p{margin: 0px;
-padding: 0px;}
+
+h4 {
+    font-size: 400px;
+    font-family: cursive;
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
 
 
-img{
-    margin:10px 20px 30px 40px;
+img {
+    margin: 10px 20px 30px 40px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px;
-    
+
 }
-#slider figure{
+
+#slider figure {
     position: relative;
     width: 500%;
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
 }
-#slider figure img{
+
+#slider figure img {
     width: 20%;
-    float:left;
-}
-@keyframes slider{
-    0%{
-        left:0%;
-    }
-    20%{
-        left:0%;
-    }
-    25%{
-        left:-100%;
-    }
-    45%{
-        left:-100%;
-    }
-    50%{
-        left:-200%;
-    }
-    70%{
-        left:-200%;
-    }
-    75%{
-        left:-300%;
-    }
-    95%{
-        left:-300%;
-    }
-    95%{
-        left:-400%;
-    }
-    
-
-
+    float: left;
 }
 
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
 
-.type1{
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    95% {
+        left: -400%;
+    }
+
+
+
+}
+
+
+.type1 {
     width: 30%;
-    display:block;
-margin:0px auto;}
-.btn{
+    display: block;
+    margin: 0px auto;
+}
+
+.btn {
     height: 50px;
     width: 200px;
     /* background-color: beige; */
     border-radius: 20px;
-    border:2px solid #A2D9CE;
-    margin:10px 10px 10px 10px ;
-    
-}
-.btn:hover{
-    background-color:darkgray ;
+    border: 2px solid #A2D9CE;
+    margin: 10px 10px 10px 10px;
+
 }
 
+.btn:hover {
+    background-color: darkgray;
+}
+
+.pet-img {
+    object-fit: scale-down;
+    height: 500px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.redirecting-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    height: 100px;
+    ;
+}
