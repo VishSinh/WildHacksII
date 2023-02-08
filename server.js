@@ -4,12 +4,15 @@ const multer = require("multer");
 const ejs = require("ejs");
 
 
+const listOfAnimals = require(`./list.js`)
+
+
 const upload = multer({
     dest: "image/"
 });
 const app = express();
 
-let infoList = [];
+let infoList = listOfAnimals;
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({

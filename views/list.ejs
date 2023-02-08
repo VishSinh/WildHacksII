@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/list.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
 
@@ -25,11 +26,29 @@
 </head>
 
 <body>
+    <nav class="navbar">
+
+        <div class="logo">ANIMAL ADOPTION</div>
+
+        <ul class="nav-links">
+
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+
+
+            </div>
+        </ul>
+    </nav>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-start">
+            <% let imgNum = 1; %> 
             <% infoList.forEach(function(info){%>
-            <div class="card col-sm" style="width: 18rem; margin: 5rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card col-2" style="width: 18rem; margin:50px;">
+                <img src="/images/<%=imgNum%>.jpg" class="card-img-top" alt="..." style="height:300px; padding:10px;">
                 <div class="card-body">
                     <h1 class="card-title">
                         <%=info.animal %>
@@ -52,12 +71,12 @@
                 </div>
             </div>
 
-
+            <% imgNum = imgNum + 1; %> 
             <% }); %>
 
         </div>
     </div>
-    <a class="btn btn-dark" href="/" role="button">Go Home</a>
+   
 
 </body>
 

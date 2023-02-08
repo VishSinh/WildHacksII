@@ -22,7 +22,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #F65A83;
+    background-color: #26a9e0;
     color: #fff;
 }
 
@@ -273,7 +273,7 @@ h1 {
 
 .button-1 {
     margin-bottom: 20px;
-    background-color: #EA4C89;
+    background-color: #26a9e0;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -300,5 +300,5 @@ h1 {
 
 .button-1:hover,
 .button-1:focus {
-    background-color: #F082AC;
+    background-color: #2c6f8c;
 }
